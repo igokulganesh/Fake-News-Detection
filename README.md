@@ -2,9 +2,9 @@
 
 # Requriements 
 
-pip install Flask
-pip install numpy pandas sklearn
-pip install newspaper3k
+pip install Flask numpy pandas sklearn newspaper3k
+
+# Setup 
 go to python shell
 import nltk
 nltk.download('punkt')
