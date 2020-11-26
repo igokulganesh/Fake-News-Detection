@@ -14,14 +14,14 @@
 
 <body>
   <div class="login">
-  	<h1>Predict Fake News</h1>
+    <h1>Predict Fake News</h1>
     <h3> Enter the following values to predict the Fake News</h3>
-    <!-- Main Input For Receiving Query to our ML -->
+    <!-- Main Input For Receiving Query to ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="Title" placeholder="Enter the news" required="required" />
-    	<input type="text" name="news" placeholder="Enter the news url" required="required" />
-      <button type="submit" class="btn">Predict</button>
+      <input type="text" name="news" placeholder="Enter the news url" required="required" />
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
+
     <br><br>
     {{ prediction_text }}
   </div>
